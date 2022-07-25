@@ -214,30 +214,30 @@ function extractEmails(str) {
  *             '└──────────┘\n'
  *
  */
-function getRectangleString(width, height) {
-  // throw new Error('Not implemented');
-  const a = '┐\n';
-  const b = '┘\n';
-  const c = '└';
-  const d = '┌';
-  const min = '─';
-  const max = '│';
-  const maxN = '│\n';
-  const space = ' ';
-  let qudroStr = '';
-  let quStr = '';
-  let spaceStr = '';
+function getRectangleString(/* width, height */) {
+  throw new Error('Not implemented');
+  // const a = '┐\n';
+  // const b = '┘\n';
+  // const c = '└';
+  // const d = '┌';
+  // const min = '─';
+  // const max = '│';
+  // const maxN = '│\n';
+  // const space = ' ';
+  // let qudroStr = '';
+  // let quStr = '';
+  // let spaceStr = '';
 
-  if (width && height && (width > 2) && (height > 2)) {
-    qudroStr = (d + min.repeat(width - 2) + a);
-    for (let i = 0; i < width.length - 2; i += 1) {
-      while (width - 2 !== width.length - 2) {
-        spaceStr = (max.repeat(height - 2) + space.repeat(width - 2) + maxN.repeat(height - 2));
-      }
-    }
-    quStr = (c + min.repeat(width - 2) + b);
-  }
-  return (qudroStr + spaceStr + quStr);
+  // if (width && height && (width > 2) && (height > 2)) {
+  //   qudroStr = (d + min.repeat(width - 2) + a);
+  //   for (let i = 0; i < width.length - 2; i += 1) {
+  //     while (width - 2 !== width.length - 2) {
+  //       spaceStr = (max.repeat(height - 2) + space.repeat(width - 2) + maxN.repeat(height - 2));
+  //     }
+  //   }
+  //   quStr = (c + min.repeat(width - 2) + b);
+  // }
+  // return (qudroStr + spaceStr + quStr);
 }
 
 
@@ -257,16 +257,16 @@ function getRectangleString(width, height) {
  *    => 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
  *
  */
-function encodeToRot13(str) {
-  // throw new Error('Not implemented');
-  const ABC = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-  let arrindexNew = 0;
-  let strToROt13 = '';
-  for (let i = 0; i < str.length; i += 1) {
-    arrindexNew = ABC.indexOf[i] + 13;
-    strToROt13 = str.replace(str[i], ABC[arrindexNew]);
-  }
-  return strToROt13;
+function encodeToRot13(/* str */) {
+  throw new Error('Not implemented');
+//   const ABC = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+//   let arrindexNew = 0;
+//   let strToROt13 = '';
+//   for (let i = 0; i < str.length; i += 1) {
+//     arrindexNew = ABC.indexOf[i] + 13;
+//     strToROt13 = str.replace(str[i], ABC[arrindexNew]);
+//   }
+//   return strToROt13;
 }
 
 /**
